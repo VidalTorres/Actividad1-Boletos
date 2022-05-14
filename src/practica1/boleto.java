@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package practica1;
 
 import java.util.Scanner;
 
-public class boletos {
+public class Boleto {
     //variables
     private int numeroBoleto;
     private String nombreCliente;
@@ -14,13 +10,14 @@ public class boletos {
     private int tipoBoleto;
     private String fecha;
     private float precio;
+    
     private double impuesto;
     private double descuento;
     private double subtotal;
     private double total;
     
     //Constructires
-    public boletos(){
+    public Boleto(){
         this.numeroBoleto = 0;
         this.nombreCliente = "";
         this.destino = "";
@@ -29,7 +26,7 @@ public class boletos {
         this.precio = 0.0f;
     }
     
-    public boletos(int numeroBoleto, String nombreCliente, String destino, int tipoBoleto, String fecha, float precio){
+    public Boleto(int numeroBoleto, String nombreCliente, String destino, int tipoBoleto, String fecha, float precio){
         this.numeroBoleto = numeroBoleto;
         this.nombreCliente = nombreCliente;
         this.destino = destino;
@@ -38,7 +35,7 @@ public class boletos {
         this.precio = precio;
     }
     
-    public boletos(boletos boleto){
+    public Boleto(Boleto boleto){
         this.numeroBoleto = boleto.numeroBoleto;
         this.nombreCliente = boleto.nombreCliente;
         this.destino = boleto.destino;

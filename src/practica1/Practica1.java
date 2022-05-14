@@ -10,7 +10,7 @@ public class Practica1 {
         Scanner captura = new Scanner(System.in);
         
         //objeto de la clase boletos
-        boletos boleto = new boletos();
+        Boleto boleto = new Boleto();
         
         //obtencion de datos
         boleto.obtenerDatos();
